@@ -11,9 +11,9 @@ def get_filters():
     Asks user to specify a city, month, and day to analyze.
 
     Returns:
-        (str) city - name of the city to analyze.
-        (str) month - name of the month to filter by, or "all" to apply no month filter.
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter.
+        (str) city - name of the city to analyze
+        (str) month - name of the month to filter by, or "all" to apply no month filter
+        (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     print('Welcome to the Program')
@@ -159,7 +159,7 @@ def station_stats(df):
     # Concatenate both the start and end station columns to a single column
     df['Start to End Station'] = df['Start Station'].str.cat(df['End Station'], sep=' to ')
 
-    # Then display the most frequent
+    # Then display the most frequent start and end station
     popular_start_to_end_station = df['Start to End Station'].mode()[0]
 
     print('\nMost popular combination of start and end station is: {}'.format(popular_start_to_end_station))
