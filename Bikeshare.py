@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 
 #Creating a dictionary containing the data sources for the three cities
-CITY_DATA = {'chicago': r'C:\Users\DeySholey\Desktop\Bikeshare-project\Data\chicago.csv',
-              'new york city': r'C:\Users\DeySholey\Desktop\Bikeshare-project\Data\new_york_city.csv',
-              'washington': r'C:\Users\DeySholey\Desktop\Bikeshare-project\Data\washington.csv'}
+CITY_DATA = {'chicago': "data/chicago.csv",
+              'new york city': "data/new_york_city.csv",
+              'washington': "data/washington.csv"}
 
 #Function to figure out the filtering requirements of the user
 def get_filters():
@@ -128,7 +128,7 @@ def load_data(city, month, day):
 
 #Function to calculate all the time-related statistics for the chosen data
 def time_stats(df):
-     """Displays statistics on the most frequent times of travel.
+    """Displays statistics on the most frequent times of travel.
 
     Args:
         param1 (df): The data frame you wish to work with.
@@ -136,7 +136,6 @@ def time_stats(df):
     Returns:
         None.
     """
-
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
