@@ -1,6 +1,3 @@
-## Date created
-11/10/2021
-
 # Project Title
 Basic Data Exploration with pandas on Bikeshare Data
 
